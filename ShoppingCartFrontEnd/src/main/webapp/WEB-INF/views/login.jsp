@@ -7,7 +7,16 @@
 <title>Insert title here</title>
 </head>
 <body>
-this is a login page
+<form action="validate">
+
+User ID :<input type ="text" name=userID >
+
+Password : <input type="password" name=password>
+
+
+<input type="submit" >
+
+</form>
 
 </body>
 </html>
