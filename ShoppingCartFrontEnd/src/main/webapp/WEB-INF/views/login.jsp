@@ -7,13 +7,14 @@
 <title>Insert title here</title>
 </head>
 <body>
-<form action="validate">
+<form action="validate" method="post">
 
 User ID :<input type ="text" name=userID >
-
+<br>
+<br>
 Password : <input type="password" name=password>
-
-
+<br>
+<br>
 <input type="submit" >
 
 </form>

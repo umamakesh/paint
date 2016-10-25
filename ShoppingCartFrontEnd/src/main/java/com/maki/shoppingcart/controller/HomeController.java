@@ -32,19 +32,19 @@ public class HomeController {
 				return "index";
 			}
 			}
-	@RequestMapping("/Login")
+	@RequestMapping("/login")
 	public String login(Model model)	
 	{
 	//Boolean userClcickedLogin = true
 	model.addAttribute("userClickedLogin","true");
-		return "index";
+		return "login";
 	}
 	
-	@RequestMapping("/Register")
+	@RequestMapping("/register")
 	public String register(Model model)
 	{
 		//Boolean userClcickedLogin = true
 		model.addAttribute("userClickedRegister","true");
-		return "index";
+		return "register";
 	}
 }
