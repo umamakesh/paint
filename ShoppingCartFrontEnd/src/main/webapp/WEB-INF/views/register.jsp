@@ -5,42 +5,26 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Insert title here</title>
-<style>
-background-color:pink;
-</style>
 </head>
-<body bgcolor="ffebcd">
-<div  algin text="center">
-	<form action = "registeration.html">
-<table>
-<tr class="autostyle2">
-<td colspan="4"> REGISTERATION FORM </td></tr>
-<tr>
-<td width="100%" colspan="4">
-</td>
-</tr>
-<tr>
-<td> name:</td>
-<td><input type="text" name="usrname"></td>
-</tr>
-<tr>
-<td> date:</td>
-<td><input type="text" name="date"></td>
-</tr>
-<tr>
-<td> email ID:</td>
-<td><input type="text" name="usrmail"></td>
-</tr>
-<tr>
-<td> contact number:</td>
-<td><input type="text" name="usrtel"></td>
-</tr>
-<tr><td> select gender:</td>
-<td> male<input type="radio" name="rd1">
-female<input type="radio" name="rd1"></td>
-</tr>
-</table>
-</form>
+<body>
+This my Registration Pages
+
+<form action="Register" method="post">
+<div>
+UserID   : <input type="text" name="userId"><br>
+Name     : <input type="text" name="username"><br>
+Password : <input type="password" name="password"><br>
+E mail   : <input type="text" name="email"><br>
+contact  : <input type="text" name="contact"><br>
+Address  : <input type="text" name="address"><br>
+<br>
+<input type="submit" value="register">
+<br>
+<input type="reset" name="rset">
+
 </div>
+
+</form>
+
 </body>
 </html>

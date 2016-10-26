@@ -16,10 +16,6 @@
  ${sucessMessage}
  ${errorMessage}
  
- 
- 
-
-
 <hr>
 
 
@@ -29,6 +25,10 @@
 </c:if>
 
 <c:if test="${userClickedRegister}">
+
+<jsp:include page="register.jsp"></jsp:include>
+</c:if>
+<c:if test="${userClickedregister}">
 
 <jsp:include page="register.jsp"></jsp:include>
 </c:if>
