@@ -10,13 +10,25 @@
 <title>welcome to Peinto</title>
 </head>
 <body>
+<c:if test="${empty successadmin}">
+
 <jsp:include page="header.jsp"></jsp:include>
  
+</c:if>
+<c:if test="${carousel}">
+		<jsp:include page="Carousel.jsp" />
+	</c:if>
+	${successlogin}
+	<c:if test="${not empty successlogin}">
+		<jsp:include page="Carousel.jsp" />
+		</c:if>
+<c:if test="${ not empty successadmin}">
 
- ${sucessMessage}
- ${errorMessage}
+<jsp:include page="Admin.jsp"></jsp:include>
  
+</c:if> 
 <hr>
+
 
 
 <c:if test="${userClickedLogin}">
@@ -33,6 +45,18 @@
 <jsp:include page="register.jsp"></jsp:include>
 </c:if>
 
+<jsp:include page="Carousel.jsp"></jsp:include>
+
+<c:if test="${userClickedAboutUs}">
+
+<jsp:include page="AboutUs.jsp"></jsp:include>
+</c:if>
+<c:if test="${userClickedContactUs}">
+
+<jsp:include page="contactus.jsp"></jsp:include>
+</c:if>
+
+<jsp:include page="Footer.jsp"></jsp:include>
 
 </body>
 </html>

@@ -22,6 +22,12 @@ public class HomeController {
 		return "login";
 		
 	}
+	@RequestMapping("/home")
+	public String home(Model m)
+	{
+		m.addAttribute("Carousel","true");
+		return "index";
+	}
 	@RequestMapping("/validate")
 	
 	public String validate(@RequestParam(name="userID") String id, @RequestParam("password") String pwd,Model model)
@@ -33,6 +39,11 @@ public class HomeController {
 			{
 				 model.addAttribute("sucessMessage", "You sucessfully logged in");
 				 return "index";
+			}
+			else if (id.equals("admin")  && pwd.equals("admin"))
+			{
+				model.addAttribute("successadmin", "login as admin ");
+				return "index";
 			}
 			else
 			{
@@ -54,5 +65,34 @@ public class HomeController {
 		//Boolean userClcickedLogin = true
 		model.addAttribute("userClickedRegister","true");
 		return "register";
+	}
+	@RequestMapping("/suppliers")
+	public String supplier(Model model) {
+		model.addAttribute("supplier","true");
+		return "Admin";
+	}
+	@RequestMapping("/product")
+	public String product(Model model) {
+		model.addAttribute("product","true");
+		return "Admin";
+	}
+	@RequestMapping("/category")
+	public String category(Model model) {
+		model.addAttribute("category","true");
+		return "Admin";
+	}
+	@RequestMapping("/AboutUs")
+	public String AboutUs(Model m)	
+	{
+	//Boolean userClcickedLogin = true
+	m.addAttribute("AboutUs","true");
+		return "AboutUs";
+	}
+	@RequestMapping("/ContactUs")
+	public String ContactUs(Model s)	
+	{
+	//Boolean userClcickedLogin = true
+	s.addAttribute("userClickedcontactus","true");
+		return "contactus";
 	}
 }
