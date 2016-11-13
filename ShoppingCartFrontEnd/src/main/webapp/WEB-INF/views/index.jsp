@@ -55,8 +55,6 @@
 
 <jsp:include page="contactus.jsp"></jsp:include>
 </c:if>
-
 <jsp:include page="Footer.jsp"></jsp:include>
-
 </body>
 </html>

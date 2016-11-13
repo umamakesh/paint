@@ -160,24 +160,24 @@ Subject</label>
         
     <legend><span class="glyphicon glyphicon-globe"></span> Our office</legend>
      
-     <strong>Twitter, Inc.</strong><br>
+     <strong>Paint, Inc.</strong><br>
   
-              NO.7/19,Pillayar Koil Street,<br>
+             DNO:3/362/A,savitri nagar 2nd street ,<br>
 
-                Jafferkhanpet, Chennai-600 083<br>
+               hukumpetta,rajahmundry,pincode: 533107 <br>
       
          <abbr title="Phone">
     
                P:</abbr>
          
-      (044) 4283-4380       
+      (+91)8143771487       
     </address>
         
     <address>
        
          <strong>Full Name</strong><br>
      
-           <a href="mailto:#">starsupport@gmail.com</a>
+           <a href="mailto:#">peinto8143@gmail.com</a>
 
             </address>
  

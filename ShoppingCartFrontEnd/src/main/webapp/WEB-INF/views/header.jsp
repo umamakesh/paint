@@ -15,46 +15,62 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootst3rapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<style>
- body
-{
-	
-	background-image: url(https://s-media-cache-ak0.pinimg.com/originals/7a/f1/ea/7af1ea40865febba6e3eb51e1582e78b.jpg);
-	background-size:cover;
+
+</head>
+<body>
+  <style>
+body  {
+    background-image: url("100.jpg");
 }
 </style>
 </head>
 <body>
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      
+
+<nav class="navbar navbar-default" role="navigation">
+  <!-- Brand and toggle get grouped for better mobile display -->
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+  </div>
+
+  <!-- Collect the nav links, forms, and other content for toggling -->
+  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <ul class="nav navbar-nav">
+ <li class="active"><a href="#">home</a></li>
+
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">menu <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+<li class="divider"></li>
+          <li><a href="#">water</a></li>
+<li class="divider"></li>
+          <li><a href="#">imter</a></li>
+<li class="divider"></li>
+          <li><a href="#">exter</a></li>
+        
+        </ul>
+       <li><a href="ContactUs">contactus</a></li>
+      <li><a href="AboutUs">aboutus</a></li>
+      </li>
+    </ul>
+    <div class="col-sm-3 col-md-3">
+        <form class="navbar-form" role="search">
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search" name="q">
+            <div class="input-group-btn">
+                <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+            </div>
+        </div>
+        </form>
     </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Product <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">product</a></li>
-            <li><a href="#">supplier</a></li>
-            <li><a href="#">category</a></li>
-          </ul>
-        </li>
-        <li><a href="#">Contact Us</a></li>
-        <li><a href="AboutUs">About Us</a></li>
-        <li><div colour:white>Search</div> <input type="text"
-        placeholder="search,categories,brands....." size="45"></li>
-      </ul>
       <ul class="nav navbar-nav navbar-right">
        <c:if test="${empty sucessMessage}">
         <li><a href="register">signup<span class="glyphicon glyphicon-user"></span></a></li>
-        <li><a href="login">login<span class="glyphicon glyphicon-log-in"></span></a></li>
+      <li><a href="login">login<span class="glyphicon glyphicon-log-in"></span></a></li>
         </c:if>
         <c:if test="${not empty sucessMessage }">
          <li><a href="#">My Cart<span class="glyphicon glyphicon-shopping-cart"></span></a></li>
